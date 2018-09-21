@@ -1,0 +1,55 @@
+
+VISION  ----   8/22/2018 ---
+
+PROCESAMIENTO DE HISTROGRAMA.
+
+Estamos buscando menorar la imagen, especialmente la imagen en escala de grises.
+
+La intensidad de un pixel es una variable aleatoria, puede ir de 0, 1, a 255.
+
+Tenemos 2 posibles caracterizaciones de variable aleatorias:
+
+1- completa: si conocen la variable puede determinar el comportamiento, se sabe conociendo las 
+la funcion probabilidad masa
+- funcion probabilidad densidad
+funcion distribucion acumulativa.
+
+
+2- parcial: no conocemos la variable sino algunas caracterisiticas. Por ejemplo el promedio, desviacion estandar, 
+
+
+Unu hoistorgrama es un metodo para saber el comportamiento o probabilidad  que tiene la imagen.
+
+p(x = 0) --> probabilidad de que el pixel valga 0
+
+
+p(x = 1) --> probabilidad de que el pixel valga 1
+.
+.
+.
+
+p(x = 255) --> probabilidad de que el pixel valga 255
+
+
+Recordar que la suma de todas las probabilidades debe ser igual a 1.
+Para eso se hace la histograma normalizado.
+
+El histograma sirve para.. Realce imagen, compresion imagen, segmentacion, procesamiento de imagen en tiempo real.
+
+
+
+PASO 1 --> CALCULAR EL HISTOGRAMA NORMALIZADO P(Rk) = Nk/N.
+Rk = nivel de gris, puede ser de 0 a 255
+Nk = Numero pixeles con nivel de grises.
+N = Numero total de pixeles.
+
+PASO 2 --> calcular transfmoracion 
+
+calcular la suma acumulativa de Pk que tiene que dar igual a 1.
+
+PASO 3 --> Calcular el nuevo valor del nuevo pixel.
+
+K = (255* Sk)
+
+
+
